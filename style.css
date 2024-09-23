@@ -4,6 +4,7 @@
 }
 body{
     font-family: "DM Mono", monospace;
+    background-color: #f5f5f5;
 }
 .logo{
     /* font-family: "Kalnia Glaze", serif; */
@@ -22,7 +23,7 @@ body{
     display: flex;
 }
 .meneContainer > li{
-    list-style-type: none;
+    list-style: none;
     padding:15px 5px;
     margin: -5px;
 }
@@ -37,8 +38,37 @@ body{
 .meneContainer > li:hover > a{
     background-color: darkblue;
 }
-.meneContainer >li:first-child > a{
+.meneContainer >li:first-child  {
     border-left: 1px solid white;
 }
 
 /* dropdown menu add here */
+
+.submenu{
+    opacity: 0;
+    background-color: dodgerblue;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+    transition: .6s all;
+}
+.submenu > li{
+    list-style: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    transition: .6s linear;
+}
+.submenu > li:hover{
+    background-color: darkblue;
+}
+.submenu > li:first-child{
+    border-top: 1px solid white;
+}
+.submenu > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.hovers:hover .submenu{
+    opacity: 1;
+}
