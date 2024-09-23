@@ -18,6 +18,8 @@ body{
     align-items: center;
     padding: 0 100px;
     transition: .5s linear;
+    position: sticky;
+    top: 0;
 }
 #navigation:hover .logotext {
     color: red;
@@ -84,10 +86,11 @@ body{
 
 /* hero area start here  */
 .main-header{
-    background-image: url('img/91925.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.183) ,rgba(0, 0, 0, 0.6)), url('img/91925.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     height: 94vh;
     color: white;
@@ -108,9 +111,26 @@ body{
 .btn{
     padding: 10px 20px;
     margin-top: 20px ;
-    background-color: dodgerblue;
+    background-color: green;
     color: white;
     font-size: 1.2rem;
-    border-radius: 10px;
-    
+    border-radius: 10px 0;
+    cursor: pointer;
+    box-shadow: -4px -4px 2px rgb(0, 0, 0);
+    transition: .5s all;
 }
+.btn:hover{
+    box-shadow: 4px 4px 2px rgb(0, 0, 0);
+    background-color: #10fb6e;
+    border-radius: 0 10px ;
+    color: black;
+}
+.btn:active{
+    box-shadow: none;
+    background-color: #00000028;
+    color: white;
+}
+
+/* header part all done and end here */
+
+/* main secton start now  */
