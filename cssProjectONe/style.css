@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Mono", monospace;
+}
+.logo{
+    /* font-family: "Kalnia Glaze", serif; */
+    color: white;
+}
+
+#navigation{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.meneContainer{
+    display: flex;
+}
+.meneContainer > li{
+    list-style-type: none;
+    padding:15px 5px;
+    margin: -5px;
+}
+
+.meneContainer > li > a{
+    text-decoration: none; 
+    color: white;
+    border-right: 1px solid white;
+    padding: 10px 15px;
+    transition: .6s linear;
+}
+.meneContainer > li:hover > a{
+    background-color: darkblue;
+}
+.meneContainer >li:first-child > a{
+    border-left: 1px solid white;
+}
