@@ -12,13 +12,16 @@ body{
 }
 
 #navigation{
-    background-color: dodgerblue;
+    background-image: linear-gradient(dodgerblue, #3702a9);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
+    transition: .5s linear;
 }
-
+#navigation:hover .logotext {
+    color: red;
+}
 .meneContainer{
     display: flex;
 }
@@ -43,23 +46,26 @@ body{
 }
 
 /* dropdown menu add here */
-
 .submenu{
     opacity: 0;
-    background-color: dodgerblue;
+    visibility: hidden;
+    background-image: linear-gradient(dodgerblue, #3702a9);
     position: absolute;
     margin-top: 10px;
     border-radius: 0px 0px 10px 10px;
-    transition: .6s all;
+    transition: .3s all;
+    transform: scaleY(0);
+    transform-origin: top center;
 }
 .submenu > li{
     list-style: none;
     border-bottom: 1px solid white;
     padding: 10px;
-    transition: .6s linear;
+    transition: .6s all;
 }
 .submenu > li:hover{
-    background-color: darkblue;
+    background-image: linear-gradient(#3702a9, dodgerblue);
+    border-radius: 10px;
 }
 .submenu > li:first-child{
     border-top: 1px solid white;
@@ -71,4 +77,9 @@ body{
 }
 .hovers:hover .submenu{
     opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
 }
+/* nav bar area end  */
+
+/* hero area start here  */
