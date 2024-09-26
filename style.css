@@ -131,7 +131,7 @@ body{
 }
 /* header part all done and end here */
 
-/* main secton start now  */
+/* main section 1 start now  */
 
 .first-Container{
     display: flex;
@@ -152,12 +152,24 @@ body{
 .box:hover .customIcons{
     color: green;
 }
-/* .box:hover .boxheaderText{ */
-    /* color: dodgerblue;
-} */
+.box:hover .boxheaderText{
+    color: dodgerblue;
+}
 .boxheaderText{
     margin: 20px;
 }
 .customIcons{
     font-size: 50px;
+}
+
+/* main section 2 start here */
+.sectinTwoContainer{
+    dis
+    
+}
+.SectionTwoImg{
+    background-color: red;
+}
+.SectionTwoImg > img{
+    width: 500px;
 }
